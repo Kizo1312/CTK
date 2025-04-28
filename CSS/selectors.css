@@ -1,0 +1,25 @@
+body{
+    background-color: antiquewhite;
+}
+*{
+    color: black;
+}
+li {
+    color: red;
+}
+.klasni{
+    color: brown;
+}
+#ajdi{
+    color: green;
+}
+li[type="name"]{
+    color: blue;
+}
+h1{
+    color: turquoise;
+    background-color: bisque;
+}
+h2{
+    color: rgb(33, 87, 57);
+}
