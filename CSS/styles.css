@@ -5,3 +5,19 @@
   #vanjski{
     color: blueviolet;
   }
+  .font1{
+  font-family: "Tagesschrift", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  }
+  .font2{
+    font-family: "Coral Pixels", serif;
+  font-weight: 400;
+  font-style: normal;
+  }
+  .font3{
+    font-family: "Playwrite RO", cursive;
+  font-optical-sizing: auto;
+ 
+  font-style: normal;
+  }
