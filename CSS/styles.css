@@ -1,4 +1,15 @@
-
+@font-face {
+    font-family: "Tagesschrift";
+    src: url("Tagesschrift-Regular.ttf");
+}
+@font-face {
+    font-family: "Playwrite RO";
+    src: url("PlaywriteRO-VariableFont_wght.ttf");
+}
+@font-face {
+    font-family: "Coral Pixels";
+    src: url("CoralPixels-Regular.ttf");
+}
   a{
     color: blueviolet;
   }
