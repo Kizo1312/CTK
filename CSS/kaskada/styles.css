@@ -1,0 +1,29 @@
+#outer-box{
+    background-color:rgb(0, 55, 128);
+    border-color: blueviolet;
+    border-style: solid;
+    border-width: 10px;
+    
+}
+.inner-box{
+    background-color: red;
+    color: white;
+    
+    
+    
+}
+.box{
+    padding: 10px;
+    color: yellow;
+    
+   
+    
+}
+.white-text{
+    color: white;
+    
+   
+}
+p{
+    margin: 0;
+}
