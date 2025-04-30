@@ -1,3 +1,10 @@
 body{
     background-color: rgb(11, 25, 174);
 }
+.boo{
+    width: 200px;
+    height: 200px;
+    background-color: brown;
+    display: inline-block;
+    text-align: center;
+}

@@ -53,16 +53,38 @@ function howMuch(pare){
     console.log(`za ${availableMoney} para mozes kupit ${canBuy} kruha i ostane ti ${ostatak} para`)
 }
 howMuch(availableMoney)
-*/
 const userName= prompt("enter name")
 const names = ["Paula", "Matej","Toma","Hana","Andro","Mihael"]
 function checkGuests(name){
     if(names.includes(name)){
         return `Dobrodosli ${name}`
-
+        
     }else return `${name}, niste na popisu`
 }
 const prvi = names[0]
 const zadnji =names[names.length -1]
 console.log(checkGuests(userName))
 console.log(prvi,zadnji )
+*/
+
+function dijeljivSa(nums){
+    arr = []
+    for (let i = 1; i< nums ; i++){
+        arr.push(i)
+    }
+    for(let i = 0; i < arr.length; i++){
+
+        if (arr[i] % 3 === 0 && arr[i] % 5 !=0){
+            arr[i] ="Fizz"
+    
+        }else if(arr[i] % 5 === 0 && arr[i] % 3 !=0){
+            arr[i] ="Buzz"
+        }else if(arr[i] % 5 === 0 && arr[i] % 3 ===0){
+            arr[i] ="Fizz Buzz"
+        }
+       
+    }
+    console.log(arr)
+}
+
+dijeljivSa(100)
