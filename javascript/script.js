@@ -65,7 +65,6 @@ const prvi = names[0]
 const zadnji =names[names.length -1]
 console.log(checkGuests(userName))
 console.log(prvi,zadnji )
-*/
 
 function dijeljivSa(nums){
     arr = []
@@ -73,18 +72,97 @@ function dijeljivSa(nums){
         arr.push(i)
     }
     for(let i = 0; i < arr.length; i++){
-
-        if (arr[i] % 3 === 0 && arr[i] % 5 !=0){
-            arr[i] ="Fizz"
-    
-        }else if(arr[i] % 5 === 0 && arr[i] % 3 !=0){
-            arr[i] ="Buzz"
-        }else if(arr[i] % 5 === 0 && arr[i] % 3 ===0){
-            arr[i] ="Fizz Buzz"
-        }
-       
+        
+    if (arr[i] % 3 === 0 && arr[i] % 5 !=0){
+        arr[i] ="Fizz"
+        
+    }else if(arr[i] % 5 === 0 && arr[i] % 3 !=0){
+        arr[i] ="Buzz"
+    }else if(arr[i] % 5 === 0 && arr[i] % 3 ===0){
+        arr[i] ="Fizz Buzz"
     }
-    console.log(arr)
+    
+}
+console.log(arr)
 }
 
 dijeljivSa(100)
+
+function beer (){
+    for (let bottles = 99; bottles>= 0; bottles--){
+        if (bottles == 0){
+            console.log("No more bottles of the beer on the wall, Go buy some more")
+            
+        }else{
+            console.log(`${bottles} bottles of beer on the wall, ${bottles} bottles of beer. 
+        Take one down and pass it around, ${bottles-1} bottles of beer on the wall`)
+    }
+}
+
+}
+
+beer()
+
+function fibonacci (n){
+    let a =0
+    let b =1
+    let num = 0
+    let list = [a,b]
+    for(let i = 2; i <n; i++ ){
+        num = a+b
+        list.push(num)
+        a= list[i-1]
+        b= list[i]
+        
+    }
+    
+    
+    console.log(list)
+    
+}
+fibonacci(10)
+
+
+
+
+const button = document.getElementById("add")
+const input = document.getElementById("input")
+const lista = document.getElementsByTagName("ul")[0]
+
+
+button.addEventListener("click", () =>{
+    const inputValue = input.value
+    const jedan = document.createElement("li")
+    jedan.innerHTML = inputValue 
+    lista.appendChild(jedan) 
+    input.value = ""
+})
+*/
+
+function add(x,y){
+    return x+y
+}
+
+function multiply(x,y){
+    return x*y
+}
+
+function divide (x,y){
+    return x/y
+}
+function deduct(x,y){
+    return x-y
+}
+
+
+function caclulate(x,y, operator){
+    return operator(x,y)
+
+
+}
+
+console.log(caclulate(5,7,multiply))
+console.log(caclulate(5,7,add))
+console.log(caclulate(5,7,deduct))
+console.log(caclulate(5,7,divide))
+
