@@ -1,5 +1,9 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 class Car {
+    make;
+    model;
+    year;
     constructor(make, model, year) {
         this.make = make;
         this.model = model;
@@ -26,6 +30,7 @@ console.log(myCar.getInfo());
 myCar.startEngine();
 console.log(Car.getNumberOfWheels());
 class ElectricCar extends Car {
+    batteryCapacity;
     constructor(make, model, year, batteryCapacity) {
         super(make, model, year);
         this.batteryCapacity = batteryCapacity;
@@ -54,3 +59,4 @@ popis.forEach((car) => {
 });
 console.log(myCar.getMake());
 console.log(mySecondCar.getMake());
+//# sourceMappingURL=script.js.map
